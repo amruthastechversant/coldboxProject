@@ -1,0 +1,8 @@
+{
+    "name":"loginApp",
+    "web":{
+        "rewrites":{
+            "enable":"true"
+        }
+    }
+}

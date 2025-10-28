@@ -1,0 +1,8 @@
+{
+    "name":"lucee",
+    "web":{
+        "rewrites":{
+            "enable":"true"
+        }
+    }
+}
