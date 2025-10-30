@@ -106,5 +106,14 @@ $(document).ready(function(){
         }
     })
 
+    $("#addressTable").dataTable({
+        "pageLength":10,
+        "lengthMenu":[5,10,15,20],
+        "order":[[0,"asc"]],
+        "language":{
+            "search":"Search Contacts:"
+        }
+    })
+
 });
 
