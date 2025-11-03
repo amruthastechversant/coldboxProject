@@ -38,7 +38,7 @@
 	style="padding-top: 60px"
 	class="d-flex flex-column h-100 mt-5"
 >
-<div id="appConfig" data-baseurl="#application.BasePath#"></div>
+<!--- <div id="appConfig" data-baseurl="#application.BasePath#"></div> --->
 	<!---Top NavBar --->
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">

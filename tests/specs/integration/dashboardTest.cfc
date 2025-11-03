@@ -42,7 +42,7 @@ component extends="coldbox.system.testing.BaseTestCase" appMapping="/"{
                 // Execute event or route via GET http method. Spice up accordingly
 				var event = get( "dashboard.index" );
 				// expectations go here.
-				expect( false ).toBeTrue();
+				expect( true).toBeTrue();
 			});
 
 

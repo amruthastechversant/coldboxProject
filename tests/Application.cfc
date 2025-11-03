@@ -5,6 +5,23 @@
  */
 component {
 
+
+	this.datasources["coldbox_dsn"] = {
+	class: "com.mysql.cj.jdbc.Driver", 
+	bundleName: "com.mysql.cj", 
+	bundleVersion: "8.0.33",
+	connectionString: "jdbc:mysql://127.0.0.1:3306/coldbox_task?useUnicode=true&characterEncoding=UTF8&serverTimezone=Asia/Calcutta&autoReconnect=true&useSSL=false&maxReconnects=3&useLegacyDatetimeCode=true",
+	username: "root",
+	password: "encrypted:c4525f9e419c20dc6a34d83305a44524c31a4a4c9bf26d81711123b0cdc84bc1",
+	
+	// optional settings
+	blob:true, // default: false
+	clob:true, // default: false
+	connectionLimit:100, // default:-1
+	liveTimeout:5, // default: -1; unit: minutes
+	alwaysSetTimeout:true, // default: false
+	validate:false, // default: false
+	};
 	// APPLICATION CFC PROPERTIES
 	this.name                 = "ColdBoxTestingSuite";
 	this.sessionManagement    = true;
@@ -13,6 +30,8 @@ component {
 	this.applicationTimeout   = createTimespan( 0, 0, 15, 0 );
 	this.whiteSpaceManagement = "smart";
 	this.enableNullSupport    = shouldEnableFullNullSupport();
+	this.datasource = "coldbox_dsn";
+	
 
 	/**
 	 * --------------------------------------------------------------------------
