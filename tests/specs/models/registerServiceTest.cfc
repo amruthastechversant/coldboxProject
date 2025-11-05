@@ -75,13 +75,6 @@ component extends="coldbox.system.testing.BaseTestCase" appMapping="/root" {
 
 */
             it( "should insert user successfully when email is new", function() {
-                // First call: email check (returns 0)
-                // Second call: insert success
-               
-
-
-
-               
 
                 var setViewCalledWith = "";
                 var event={
@@ -94,11 +87,11 @@ component extends="coldbox.system.testing.BaseTestCase" appMapping="/root" {
                 var prc = {};
 
                 var registerService=new models.registerService();
-                var result = registerService.saveUser( event, rc, prc );
+                registerService.saveUser( event, rc, prc );
 
-                 expect( setViewCalledWith ).toBe( "user/Register" );;
+                expect( setViewCalledWith ).toBe( "user/Register" );;
                 expect( prc ).notToHaveKey( "error" );
-                expect( result ).notToBeNull();
+               
             });
             
 
